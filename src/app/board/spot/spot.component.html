@@ -1,0 +1,10 @@
+<div 
+ class="spot"
+ (click)="wasClick($event)" 
+ [class.pieceComputer]="player1Here()"
+ [class.piecePlayer]="player2Here()"
+ [class.legalspot]="legalMove()"
+ id="{{getID()}}"
+>
+  {{location}}
+</div>

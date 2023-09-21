@@ -1,0 +1,36 @@
+<p>
+  Top of Board
+</p>
+
+<!--<div class="board">-->
+ <!--<tr >
+    <td colwidth="1" *ngFor="let i of getColNums()">
+      {{ i }}
+     </td> 
+  </tr>  -->
+<!--<tr  *ngFor="let i of getRowNums()">
+    <td rownum >{{i}}</td>
+    <div *ngFor="let s of getRow(i)>
+    <app-spot *ngFor="let s of getRow(i)"  
+        [spot]=s ></app-spot> 
+    </div>
+  </tr>
+-->
+
+<div #actualTarget>Taregt div</div>
+<app-grid [width]=9 height=9  
+      (spotClicked)="spotClicked($event)"
+      (wallClicked)="wallClicked($event)"
+></app-grid>
+<app-footer></app-footer>
+
+<div *ngIf="showDlg()" >
+<p-dialog header="Winner" [(visible)]="display" modal="modal" width="300" responsive="true">
+    {{winningPlayer.name}} wins.
+</p-dialog>
+
+
+<button type="text" (click)="showDialog()" pButton icon="fa-external-link-square" label="Show">dButton </button>
+</div>
+
+

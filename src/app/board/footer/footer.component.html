@@ -1,0 +1,17 @@
+<table width="100%">
+<tr>
+<td style="xbackground-color:#FF0000" class="pieceComputer" >Next Move: {{nextturn()}}</td>
+<td></td>
+
+</tr>
+<tr>
+ <td><app-player-status [player]="getPlayer(0)"  ></app-player-status></td> 
+ <td><app-player-status [player]="getPlayer(1)"  ></app-player-status></td> 
+</tr>
+
+</table>
+
+<!--<div [class]="getClass(n)"
+*ngFor="let n of getList()" >
+    Extra Stuff
+</div>-->

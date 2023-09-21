@@ -1,0 +1,89 @@
+.boardgrid {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat( 8, 4em 0.75em) 4em;
+    grid-template-rows: repeat( 8, 4em 0.75em) 4em;
+    outline: 1px solid;
+    align-items: stretch;
+
+}
+
+
+
+.spot {
+    outline: 1px solid;
+    height: 100%;
+    width: 100%;
+}
+
+.innerspot {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+.piecespot {
+    display: inline-block;
+    border: 1px solid black;
+    xborder-collapse: collapse;
+    width:  4em; 
+    height: 4em; 
+
+}
+
+.legalspot:hover {
+    background-color: lightgrey
+}
+
+.legalwall:hover {
+    background-color: darkgrey
+}
+
+.player1 {
+    background-color: #bc2525; 
+}
+
+.player2 {
+    background-color: #3ebc25; 
+
+}
+
+
+.player1Color {
+    background: #bc2525; 
+
+}
+
+.player2Color {
+    background: #3ebc25; 
+}
+
+.pieceComputer { 
+    border-radius: 50%; 
+    width: 4em; 
+    height: 4em; 
+    background: #bc2525; 
+    xmargin-left: 5px; 
+    border: 1px solid #a31d1d; }
+.piecePlayer { 
+    border-radius: 50%; 
+    width: 4em; 
+    height: 4em; 
+    background: #3ebc25; 
+    xmargin-left: 5px; 
+    border: 1px solid #34a51d; }
+
+
+.wall {
+    width: 100%;
+    height: 100%;
+}
+
+.playedwall {
+        background-color: black
+
+}
+

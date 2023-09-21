@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    * {
+        outline: 1px solid;
+        margin: 0;
+        padding: 0;
+    }
+    .board {
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: repeat( 2, 4em 0.5em) 4em;
+
+        xgrid-template-columns: repeat(4, [col] 100px ) ;
+        xgrid-template-rows: repeat(4, [row] auto  );
+        background-color: #fff;
+        color: #444;
+    }
+    .row {
+        xdisplay: flex;
+        height: 4em;
+        width: 16em;
+    }
+    .cell {
+        xdisplay: inline-block;
+        width: 4em;
+        height: 4em;
+    }
+
+    .skinny {
+        width: 0.5em
+    }
+
+    .short {
+        height: 0.5em;
+    }
+
+    .r1 {
+        grid-row: 1;
+    }
+    .r2 {
+        grid-row: 2;
+    }
+    .r3 {
+        grid-row: 3;
+    }
+    .r4 {
+        grid-row: 4;
+    }
+    .r5 {
+        grid-row: 5;
+    }
+
+    .c1 {
+        grid-column: 1;
+    }
+    .c2 {
+        grid-column: 2;
+    }
+    .c3 {
+        grid-column: 3;
+    }
+    .c4 {
+        grid-column: 4;
+    }
+    .c5 {
+        grid-column: 5;
+    }
+
+</style>
+Start
+<div class="board">
+    <div class="cell r1 c1">1</div>
+    <div class="skinny r1 c2">2</div>
+    
+    <div class="cell r2 c1">1</div>
+    <div class="skinny r2 c2">2</div>
+    <div class="cell r2 c3">3</div>
+    <div class="skinny r2 c4">4</div>
+    <div class="cell r2 c5">5</div>
+
+    <div class="short  r3 c1">1</div>
+    <div class="short skinny r3 c2">2</div>
+    <div class="short cell r3 c3">3</div>
+    <div class="short skinny cell r3 c4">4</div>
+    <div class="short cell r3 c5">5</div>
+
+
+    <div class="cell r1 c3">3</div>
+    <div class="skinny r1 c4">4</div>
+    <div class="cell r1 c5">5</div>
+  
+    <div class="cell r4 c1">1</div>
+    <div class="skinny r4 c2">2</div>
+    <div class="cell r4 c3">3</div>
+    <div class="skinny r4 c4">4</div>
+    <div class="cell r4 c5">5</div>
+
+    <div class="cell r5 c1">1</div>
+    <div class="skinny r5 c2">2</div>
+    <div class="cell r5 c3">3</div>
+    <div class="skinny r5 c4">4</div>
+    <div class="cell r5 c5">5</div>
+
+</div>
+
+</div>
+End
+</body>
+</html>
